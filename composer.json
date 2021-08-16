@@ -1,0 +1,48 @@
+{
+  "config": {
+    "preferred-install": "dist"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "wpackagist-plugin/woocommerce": "*",
+    "wpackagist-plugin/woocommerce-gateway-stripe": "*",
+    "wpackagist-plugin/classic-editor": "*",
+    "wpackagist-plugin/disable-xml-rpc-pingback": "*",
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/regenerate-thumbnails": "*",
+    "wpackagist-plugin/w3-total-cache": "*",
+    "wpackagist-plugin/autoptimize": "*",
+    "wpackagist-plugin/wp-smushit": "*",
+    "wpackagist-plugin/cf7-mailchimp": "*",
+    "wpackagist-plugin/loco-translate": "*",
+    "wpackagist-plugin/ga-google-analytics": "*",
+    "wpackagist-plugin/duplicate-post": "*",
+    "wpackagist-plugin/safe-svg": "*",
+    "wpackagist-plugin/contact-form-7-simple-recaptcha": "*",
+    "wpackagist-plugin/wp-crontrol": "*",
+    "wpackagist-plugin/wp-mail-smtp": "*",
+    "wpackagist-plugin/cron-logger": "*"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.5.1"
+  },
+  "extra": {
+    "installer-paths": {
+      "wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "wp-content/themes/{$name}/": ["type:wordpress-theme"]
+    }
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpcs"
+    ]
+  }
+}

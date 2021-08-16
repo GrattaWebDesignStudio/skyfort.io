@@ -1,0 +1,10 @@
+[0403/230516:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0404/131328:ERROR:crash_report_exception_handler.cc(130)] FinishedWritingCrashReport failed
+[0430/195040:ERROR:crash_report_exception_handler.cc(130)] FinishedWritingCrashReport failed
+[0531/122411:ERROR:crash_report_exception_handler.cc(130)] FinishedWritingCrashReport failed
+[0531/170831:ERROR:crash_report_exception_handler.cc(130)] FinishedWritingCrashReport failed
+[0531/231139:ERROR:process_reader_win.cc(233)] ReadMemory at 0x4ffff85 of 512 bytes failed: «апрос ReadProcessMemory или WriteProcessMemory был выполнен только частично. (0x12B)
+[0531/231139:ERROR:crash_report_exception_handler.cc(121)] WriteEverything failed
+[0621/090456:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0621/090945:ERROR:crash_report_exception_handler.cc(130)] FinishedWritingCrashReport failed
+[0621/100243:ERROR:crash_report_exception_handler.cc(130)] FinishedWritingCrashReport failed

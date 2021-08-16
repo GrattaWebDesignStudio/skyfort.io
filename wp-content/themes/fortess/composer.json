@@ -1,0 +1,17 @@
+{
+    "require": {
+		 "php": ">=7.0",
+    		 "tgmpa/tgm-plugin-activation": "*"	
+    }, 	
+    "autoload": {
+
+        "psr-4": {
+                    "Fortess\\": "src"
+                 }
+    },
+    "autoload-dev": {
+        "psr-4": {
+		    "Fortess\\": "src"
+	    	 }
+    }	
+}

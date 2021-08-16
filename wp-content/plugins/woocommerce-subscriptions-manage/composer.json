@@ -1,0 +1,38 @@
+{ 
+     "require": {
+		"php": ">=7.1",
+		"ext-json": "*"
+     },
+     "require-dev": {
+		"php": ">=7.1",
+		"ext-json": "*"
+     },
+     "autoload": {
+        "psr-0": {
+			"WoocommerceSubscriptionsManage\\": "src"
+	    },
+        "psr-4": {
+			"WoocommerceSubscriptionsManage\\": "src"
+                 },
+        "classmap": [
+			"src"
+		],
+	"files": [
+
+		]
+     },
+     "autoload-dev": {
+        "psr-0": {
+			"WoocommerceSubscriptionsManage\\": "tests"
+	    },
+        "psr-4": {
+			"WoocommerceSubscriptionsManage\\": "tests"
+                 },
+        "classmap": [
+			"tests"
+		],
+	"files": [
+
+		]
+     }	
+}

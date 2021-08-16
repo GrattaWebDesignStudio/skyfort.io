@@ -1,0 +1,126 @@
+/*!
+Theme Name: fortess
+Theme URI: http://gratta.pro/
+Author: Valerii Vasyliev
+Author URI: http://gratta.pro/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: fortess
+*/
+
+.wpcf7-response-output {
+    display: none !important;
+}
+
+.wpcf7-form textarea{ 
+    width: 100% !important;
+    height: 130px;
+}
+
+.box-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: rgba(3, 9, 30, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+/* NOTIFICATION */
+.notification {
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  max-width: 374px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #060C24;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 25px 50px 25px 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+@media (max-width: 420px) {
+  .notification {
+    font-size: 22px;
+  }
+}
+.notification__close {
+  background-color: transparent;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 55px;
+  height: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  padding: 0;
+  opacity: .5;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.notification__close:hover {
+  opacity: 1;
+}
+
+#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment {
+    background-color: transparent;
+}
+
+#add_payment_method #payment div.payment_box, .woocommerce-cart #payment div.payment_box, .woocommerce-checkout #payment div.payment_box {
+    background-color: transparent;
+}
+
+#add_payment_method #payment div.payment_box::before, .woocommerce-cart #payment div.payment_box::before, .woocommerce-checkout #payment div.payment_box::before {
+    border-style: none;
+}
+
+.woocommerce-checkout #payment ul.payment_methods {
+    border-bottom: none;
+}
+
+.woocommerce-checkout #payment div.payment_box {
+    color: #fff;
+}
+form.checkout .woocommerce-NoticeGroup {
+      padding-left: 15px;
+   padding-right: 15px;
+   width: 100%;
+   max-width: 100%;
+   -ms-flex-preferred-size: 100%;
+   flex-basis: 100%;
+}
+
+.container.product-features {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-right {
+    margin-left: auto; 
+    margin-right: 0;
+    float: right;
+}
+#form-coworkers-invite > div.form-block.email-invite:nth-of-type(1)  {
+  display : none;
+}
+.form-group__item input[type="checkbox"] {
+   height: 15px;
+   width: 20px;
+}
